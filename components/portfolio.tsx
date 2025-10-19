@@ -1,123 +1,40 @@
 "use client";
+import React from "react";
+import { Skiper52 } from "@/components/HoverExpand_001";
+import { motion } from "framer-motion";
 
-import { AnimatePresence, motion } from "framer-motion";
-import React, { useState } from "react";
-// import "swiper/css";
-// import "swiper/css/effect-creative";
-// import "swiper/css/pagination";
-// import "swiper/css/autoplay";
 
-import { cn } from "@/lib/utils";
-
-const Skiper52 = () => {
- const images = [
-    {
-      src: "https://i.pinimg.com/1200x/b5/f4/8e/b5f48ea8142b932cd58ad9ff8833fc16.jpg",
-      alt: "Description 1",
-      code: "# 01",
-    },
-    {
-      src: "https://i.pinimg.com/736x/2b/d1/f4/2bd1f4cfc69c7cbdd7e438409eb97a8c.jpg",
-      alt: "Description 2",
-      code: "# 02",
-    },
-    {
-      src: "https://i.pinimg.com/1200x/24/0c/e0/240ce0b9581a246b5b2780002a95f4a4.jpg",
-      alt: "Description 3",
-      code: "# 03",
-    },
-    {
-      src: "https://i.pinimg.com/736x/65/1c/e4/651ce47c0e0dc7e15cf727244315f935.jpg",
-      alt: "Description 4",
-      code: "# 04",
-    },
-    
-
-  ];
-
+const Portfolio = () => {
   return (
-    <div className="flex h-full w-full items-center justify-center overflow-hidden bg-[#f5f4f3]">
-      <HoverExpand_001 className="" images={images} />{" "}
-    </div>
-  );
-};
-
-export { Skiper52 };
-
-const HoverExpand_001 = ({
-  images,
-  className,
-}: {
-  images: { src: string; alt: string; code: string }[];
-  className?: string;
-}) => {
-  const [activeImage, setActiveImage] = useState<number | null>(1);
-
-  return (
-    <motion.div
-      initial={{ opacity: 0, translateY: 20 }}
-      animate={{ opacity: 1, translateY: 0 }}
-      transition={{
-        duration: 0.3,
-        delay: 0.5,
-      }}
-      className={cn("relative w-full max-w-6xl px-5", className)}
+    <section
+      id="portfolio"
+      className="w-full bg-[#f5f4f3] py-16 px-4 md:px-8 lg:px-16 flex flex-col items-center justify-center"
     >
+      {/* Heading */}
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.3 }}
-        className="w-full"
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.7 }}
+        viewport={{ once: true }}
+        className="text-center mb-10"
       >
-        <div className="flex w-full items-center justify-center gap-1">
-          {images.map((image, index) => (
-            <motion.div
-              key={index}
-              className="relative cursor-pointer overflow-hidden rounded-3xl"
-              initial={{ width: "2.5rem", height: "20rem" }}
-              animate={{
-                width: activeImage === index ? "24rem" : "5rem",
-                height: activeImage === index ? "24rem" : "24rem",
-              }}
-              transition={{ duration: 0.3, ease: "easeInOut" }}
-              onClick={() => setActiveImage(index)}
-              onHoverStart={() => setActiveImage(index)}
-            >
-              <AnimatePresence>
-                {activeImage === index && (
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    className="absolute h-full w-full bg-gradient-to-t from-black/40 to-transparent"
-                  />
-                )}
-              </AnimatePresence>
-              <AnimatePresence>
-                {activeImage === index && (
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    exit={{ opacity: 0 }}
-                    className="absolute flex h-full w-full flex-col items-end justify-end p-4"
-                  >
-                    <p className="text-left text-xs text-white/50">
-                      {image.code}
-                    </p>
-                  </motion.div>
-                )}
-              </AnimatePresence>
-              <img
-                src={image.src}
-                className="size-full h-130 object-cover"
-                alt={image.alt}
-              />
-            </motion.div>
-          ))}
-        </div>
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#1A14A5] drop-shadow-sm">
+          Our <span className="text-[#231F20]">Portfolio</span>
+        </h2>
+        <p className="mt-4 text-base md:text-lg text-[#231F20]/80 max-w-2xl mx-auto leading-relaxed">
+          Business Smart Hub (BSH) provides future-ready solutions to help
+          businesses design, develop, market, and scale in the digital age.
+        </p>
       </motion.div>
-    </motion.div>
+
+      {/* Portfolio Gallery */}
+      <div className="w-full max-w-7xl flex items-center justify-center">
+        <div className="w-full h-[400px] sm:h-[500px] md:h-[550px] lg:h-[650px] rounded-2xl overflow-hidden shadow-xl">
+          <Skiper52 />
+        </div>
+      </div>
+    </section>
   );
 };
 
-export { HoverExpand_001 };
+export default Portfolio;
