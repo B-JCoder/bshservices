@@ -3,13 +3,13 @@ import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Heros from "@/components/heros";
 import Services from "@/components/services";
-import Testimonial from "@/components/testimonial";
+// import Testimonial from "@/components/testimonial";
 import Faq from "@/components/faq";
 import About from "@/components/about";
 import Contactform from "@/components/contactform";
-import Portfolio from "@/components/portfolio";
+// import Portfolio from "@/components/portfolio";
 
-import { StatCounter } from "@/components/stat-counter"
+// import { StatCounter } from "@/components/stat-counter"
 
 
 const page = () => {
@@ -20,11 +20,11 @@ const page = () => {
     <div>
       <Header />
       <Heros />
-        <StatCounter />
+        {/* <StatCounter /> */}
       <About />
       <Services />
-      <Portfolio />
-    <Testimonial />
+      {/* <Portfolio /> */}
+    {/* <Testimonial /> */}
       <Faq />
       <Contactform />
 
