@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { motion, MotionProps } from "framer-motion";
 import HeroLogo from "./HeroLogo";
 import Image from "next/image";
-
+import TypedHeading from "@/components/TypedHeading";
 
 // Common floating animation config
 const floatingAnimation: MotionProps = {
@@ -28,7 +28,7 @@ const Heros: React.FC = () => {
           transition={{ duration: 0.8, ease: "easeOut" }}
           className="text-3xl sm:text-5xl lg:text-6xl font-extrabold text-[#1A14A5] drop-shadow-sm tracking-tight"
         >
-          BSH SOLUTIONS
+           <TypedHeading />
         </motion.h1>
 
         <motion.h2

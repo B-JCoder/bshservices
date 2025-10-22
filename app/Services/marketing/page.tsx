@@ -3,10 +3,9 @@ import ServiceGrid from "@/components/services/ServiceGrid"
 import TechWeUse from "@/components/services/TechWeUse"
 import Features from "@/components/services/Features"
 import Form from "@/components/services/Form"
+import Header from "@/components/header"
+import Footer from "@/components/footer"
 import { DollarSign, Users, Megaphone, ChartBar, PenTool } from "lucide-react"
-
-import Header from "@/components/header";
-import Footer from "@/components/footer";
 
 const services = [
   { title: "PPC Advertising", desc: "Targeted ad campaigns for high ROI.", icon: DollarSign },
@@ -17,28 +16,38 @@ const services = [
   { title: "Influencer Marketing", desc: "Collaborate with trusted voices.", icon: Users },
 ]
 
-const tech = ["Google Ads", "Meta Ads", "Ahrefs", "HubSpot", "Canva", "Mailchimp"]
+const tech = [
+  "Google Ads",
+  "Meta Ads",
+  "Ahrefs",
+  "Canva",
+  "HubSpot",
+  "Buffer",
+  "Mailchimp",
+  "Hootsuite",
+]
+
 const features = [
-  "Result-driven ad strategies",
-  "SEO & content integration",
-  "Data-based performance reports",
-  "End-to-end campaign management",
+  "Data-driven marketing strategy for measurable results",
+  "Creative ad designs that attract and convert",
+  "Detailed analytics and monthly performance reports",
+  "Customized approach for every business niche",
 ]
 
 export default function MarketingPage() {
   return (
     <>
-     <Header />
+      <Header />
       <Hero
         title="Marketing Services"
-        subtitle="We help brands grow through smart digital marketing."
+        subtitle="Boost your online presence with targeted campaigns and creative strategies."
         image="/images/Marketing.png"
       />
       <ServiceGrid services={services} />
       <TechWeUse tech={tech} />
       <Features features={features} />
       <Form serviceName="Marketing" />
-         <Footer />
+      <Footer />
     </>
   )
 }

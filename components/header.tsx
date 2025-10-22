@@ -56,11 +56,7 @@ const Header = () => {
                 </NavigationMenuLink>
               </NavigationMenuItem>
 
-              <NavigationMenuItem>
-                <NavigationMenuLink asChild className="hover:text-[#1A14A5] transition">
-                  <Link href="/About">About</Link>
-                </NavigationMenuLink>
-              </NavigationMenuItem>
+              
 
               {/* Mega Dropdown for Services */}
             <NavigationMenuItem>
@@ -123,19 +119,23 @@ const Header = () => {
     </div>
   </NavigationMenuContent>
 </NavigationMenuItem>
+<NavigationMenuItem>
+                <NavigationMenuLink asChild className="hover:text-[#1A14A5] transition">
+                  <Link href="#about">About</Link>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
 
-
-              <NavigationMenuItem>
+              {/* <NavigationMenuItem>
                 <NavigationMenuLink asChild className="hover:text-[#1A14A5] transition">
                   <Link href="/Blog">Blog</Link>
                 </NavigationMenuLink>
-              </NavigationMenuItem>
+              </NavigationMenuItem> */}
 
-              <NavigationMenuItem>
+              {/* <NavigationMenuItem>
                 <NavigationMenuLink asChild className="hover:text-[#1A14A5] transition">
                   <Link href="/Casestudies">Case Studies</Link>
                 </NavigationMenuLink>
-              </NavigationMenuItem>
+              </NavigationMenuItem> */}
             </NavigationMenuList>
           </NavigationMenu>
         </div>
@@ -168,9 +168,7 @@ const Header = () => {
           <Link href="/" className="block hover:text-[#1A14A5]">
             Home
           </Link>
-          <Link href="/About" className="block hover:text-[#1A14A5]">
-            About
-          </Link>
+        
           <div>
             <p className="font-semibold text-[#231F20] mb-2">Services</p>
             <div className="space-y-2 pl-3">
@@ -200,12 +198,15 @@ const Header = () => {
               </Link>
             </div>
           </div>
-          <Link href="/Blog" className="block hover:text-[#1A14A5]">
+            <Link href="#about" className="block hover:text-[#1A14A5]">
+            About
+          </Link>
+          {/* <Link href="/Blog" className="block hover:text-[#1A14A5]">
             Blog
           </Link>
           <Link href="/Casestudies" className="block hover:text-[#1A14A5]">
             Case Studies
-          </Link>
+          </Link> */}
           <div className="flex flex-col gap-3 pt-4">
             <Button className="bg-[#1A14A5] text-white shadow-md hover:bg-[#231F20] rounded-2xl" asChild>
               <Link href="/Contact">Contact</Link>

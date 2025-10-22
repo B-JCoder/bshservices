@@ -1,7 +1,7 @@
 "use client"
 import React from "react"
 import Image from "next/image"
-import { Facebook, Instagram, Twitter, Linkedin, Mail, Phone, MapPin } from "lucide-react"
+import { Facebook, Instagram,  Linkedin, Mail, Phone, MapPin } from "lucide-react"
 import Link from "next/link"
 import { motion } from "framer-motion"
 
@@ -44,8 +44,7 @@ const Footer = () => {
         >
          
           <motion.li><Link href="/" className="hover:text-[#1A14A5] transition">Home</Link></motion.li>
-          <motion.li><Link href="/Blog" className="hover:text-[#1A14A5] transition">Blog</Link></motion.li>
-          <motion.li><Link href="/Casestudies" className="hover:text-[#1A14A5] transition">Case Studies</Link></motion.li>
+        
           <motion.li><Link href="/About" className="hover:text-[#1A14A5] transition">About</Link></motion.li>
           <motion.li><Link href="/Services" className="hover:text-[#1A14A5] transition">Services</Link></motion.li>
           <motion.li><Link href="/#faq" className="hover:text-[#1A14A5] transition">FAQ</Link></motion.li>
@@ -59,23 +58,31 @@ const Footer = () => {
           transition={{ duration: 1, delay: 0.6 }}
           className="flex flex-col items-center text-center space-y-2 text-[#231F20]"
         >
-          <p className="flex items-center gap-2"><Mail size={16} /> info@bshsolutions.com</p>
-          <p className="flex items-center gap-2"><Phone size={16} /> +92 300 1234567</p>
-          <p className="flex items-center gap-2"><MapPin size={16} /> Karachi, Pakistan</p>
-
-          <div className="flex gap-5 mt-4">
-            <Link href="#" className="p-2 rounded-full bg-[#1A14A5]/10 shadow-lg hover:scale-110 transition">
+                <div className="space-y-4">
+            <div className="flex items-center gap-3 text-[#231F20]/90">
+              <Mail className="text-[#1A14A5] w-6 h-6" />
+              <span>bshsolutionss@gmail.com</span>
+            </div>
+            <div className="flex items-center gap-3 text-[#231F20]/90">
+              <Phone className="text-[#1A14A5] w-6 h-6" />
+              <span>+92 335 3165603</span>
+            </div>
+            <div className="flex items-center gap-3 text-[#231F20]/90">
+              <MapPin className="text-[#1A14A5] w-6 h-6" />
+              <span>Karachi, Pakistan</span>
+            </div>
+                <div className="flex gap-5 mt-4">
+            <Link href="https://www.facebook.com/people/BSH-Solutions/61582682037084/" className="p-2 rounded-full bg-[#1A14A5]/10 shadow-lg hover:scale-110 transition">
               <Facebook className="text-[#1A14A5]" />
             </Link>
-            <Link href="#" className="p-2 rounded-full bg-[#1A14A5]/10 shadow-lg hover:scale-110 transition">
+            <Link href="https://www.instagram.com/bshsolutions_/" className="p-2 rounded-full bg-[#1A14A5]/10 shadow-lg hover:scale-110 transition">
               <Instagram className="text-[#1A14A5]" />
             </Link>
-            <Link href="#" className="p-2 rounded-full bg-[#1A14A5]/10 shadow-lg hover:scale-110 transition">
-              <Twitter className="text-[#1A14A5]" />
-            </Link>
-            <Link href="#" className="p-2 rounded-full bg-[#1A14A5]/10 shadow-lg hover:scale-110 transition">
+            
+            <Link href="https://www.linkedin.com/company/bsh-solutionss/" className="p-2 rounded-full bg-[#1A14A5]/10 shadow-lg hover:scale-110 transition">
               <Linkedin className="text-[#1A14A5]" />
             </Link>
+          </div>
           </div>
         </motion.div>
 
