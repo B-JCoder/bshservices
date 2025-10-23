@@ -21,6 +21,7 @@ const Heros: React.FC = () => {
   return (
     <section className="relative min-h-screen flex flex-col-reverse lg:flex-row items-center justify-center lg:justify-between px-6 sm:px-10 lg:px-16 bg-[#F4F7FE] overflow-hidden pt-20 lg:pt-32 pb-20">
       {/* Left Content */}
+    
       <div className="max-w-2xl text-center lg:text-left space-y-6 relative z-10 mt-12 lg:mt-0">
         <motion.h1
           initial={{ opacity: 0, y: -50 }}

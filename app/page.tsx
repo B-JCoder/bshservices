@@ -12,7 +12,7 @@ import ProcessFlow from "@/components/ProcessFlow";
 import "./globals.css";
 // import Portfolio from "@/components/portfolio";
 
-// import { StatCounter } from "@/components/stat-counter"
+import { StatCounter } from "@/components/stat-counter"
 
 
 const page = () => {
@@ -23,8 +23,9 @@ const page = () => {
     <div>
       <Header />
       <Heros />
+       <StatCounter />
        <MovingText />
-        {/* <StatCounter /> */}
+   
       <About />
       <Services />
         <ProcessFlow />
