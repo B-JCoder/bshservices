@@ -128,7 +128,7 @@ const ProcessFlow = () => {
       </motion.h2>
 
       {/* Center Timeline Line */}
-      <div className="absolute left-1/2 top-0 w-[4px] h-full bg-gradient-to-b from-[#1A14A5] to-[#4b35ff] rounded-full timeline-line shadow-[0_0_25px_rgba(26,20,165,0.4)]"></div>
+      <div className="absolute left-1/2 top-35 w-[4px] h-full bg-gradient-to-b from-[#1A14A5] to-[#4b35ff] rounded-full timeline-line shadow-[0_0_25px_rgba(26,20,165,0.4)]"></div>
 
       {/* Steps */}
       <div className="relative z-10 flex flex-col gap-24 mt-10 w-full max-w-5xl">
@@ -147,7 +147,7 @@ const ProcessFlow = () => {
             {/* Connector Arm */}
             <div
               className={`absolute top-1/2 ${
-                index % 2 === 0 ? "right-[50%]" : "left-[50%]"
+                index % 2 === 0 ? "right-[15%]" : "left-[15%]"
               } w-[18vw] h-[2px] bg-gradient-to-r from-[#1A14A5] to-[#4b35ff] shadow-[0_0_15px_rgba(74,58,255,0.6)]`}
             ></div>
 

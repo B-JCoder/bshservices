@@ -26,11 +26,12 @@ const page = () => {
       <Heros />
        <StatCounter />
        <MovingText />
-       <OurTechnologies />
+       
    
       <About />
       <Services />
         <ProcessFlow />
+        <OurTechnologies />
       {/* <Portfolio /> */}
     {/* <Testimonial /> */}
       <Faq />

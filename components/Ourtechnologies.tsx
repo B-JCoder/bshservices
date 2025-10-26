@@ -54,10 +54,10 @@ import {
 
 const techStack = [
   { name: "JavaScript", icon: <SiJavascript color="#F7DF1E" /> },
-  { name: "Next.js", icon: <SiNextdotjs color="#FFFFFF" /> },
+  { name: "Next.js", icon: <SiNextdotjs color="#000" /> },
   { name: "React", icon: <SiReact color="#61DBFB" /> },
   { name: "Tailwind CSS", icon: <SiTailwindcss color="#38BDF8" /> },
-  { name: "Three.js", icon: <SiThreedotjs color="#FFFFFF" /> },
+  { name: "Three.js", icon: <SiThreedotjs color="#000000" /> },
   { name: "Angular", icon: <SiAngular color="#DD0031" /> },
   { name: "PHP", icon: <SiPhp color="#777BB4" /> },
   { name: "Shopify", icon: <SiShopify color="#96BF48" /> },
@@ -77,7 +77,7 @@ const techStack = [
   { name: "Firebase", icon: <SiFirebase color="#FFCA28" /> },
   { name: "Prisma", icon: <SiPrisma color="#2D3748" /> },
 
-  { name: "GitHub", icon: <SiGithub color="#FFFFFF" /> },
+  { name: "GitHub", icon: <SiGithub color="#000" /> },
   { name: "Docker", icon: <SiDocker color="#2496ED" /> },
 
   { name: "Photoshop", icon: <SiAdobephotoshop color="#31A8FF" /> },
@@ -89,7 +89,7 @@ const techStack = [
   { name: "Adobe XD", icon: <SiAdobexd color="#FF61F6" /> },
   { name: "Sketch", icon: <SiSketch color="#F7B500" /> },
   { name: "InVision", icon: <SiInvision color="#FF3366" /> },
-  { name: "Notion", icon: <SiNotion color="#FFFFFF" /> },
+  { name: "Notion", icon: <SiNotion color="#000" /> },
   { name: "Grammarly", icon: <SiGrammarly color="#15C39A" /> },
   { name: "Google Docs", icon: <SiGoogledocs color="#4285F4" /> },
   { name: "Mailchimp", icon: <SiMailchimp color="#FFE01B" /> },
@@ -106,9 +106,9 @@ const techStack = [
 
 export default function OurTechnologies() {
   return (
-    <section className="w-full py-16 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900 text-white">
+    <section className="w-full py-16 text-white">
       <div className="max-w-6xl mx-auto px-6 text-center">
-        <h2 className="text-3xl md:text-4xl font-bold mb-10">
+        <h2 className="text-3xl md:text-4xl font-bold mb-10 text-[#0f0b7a]">
           Our Technologies
         </h2>
 
@@ -119,7 +119,7 @@ export default function OurTechnologies() {
               className="flex flex-col items-center justify-center space-y-2 hover:scale-110 transition-transform duration-300"
             >
               <div className="text-4xl md:text-5xl">{tech.icon}</div>
-              <p className="text-xs md:text-sm font-medium text-gray-300">
+              <p className="text-xs md:text-sm font-medium text-[#0f0b7a]">
                 {tech.name}
               </p>
             </div>
