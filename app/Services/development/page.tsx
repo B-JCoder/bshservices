@@ -1,8 +1,38 @@
+"use client";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Hero from "@/components/services/Hero";
 import ServiceSection from "@/components/services/ServiceSection";
 import Form from "@/components/services/Form";
+
+import {
+  SiJavascript,
+  SiNextdotjs,
+  SiReact,
+  SiTailwindcss,
+  SiThreedotjs,
+  SiAngular,
+  SiPhp,
+  SiShopify,
+  SiWordpress,
+  SiWoocommerce,
+  SiStripe,
+  SiPaypal,
+  SiFlutter,
+  SiApple,
+  SiAndroid,
+  SiNodedotjs,
+  SiPython,
+  SiDotnet,
+  SiSupabase,
+  SiFirebase,
+  SiPrisma,
+
+  SiGithub,
+  SiDocker,
+} from "react-icons/si";
+
+import { FaJava, FaAws, FaTools } from "react-icons/fa"; 
 
 export default function DevelopmentPage() {
   return (
@@ -30,15 +60,15 @@ export default function DevelopmentPage() {
           "Fully responsive layouts",
         ]}
         tech={[
-          { name: "JavaScript", icon: "/icons/js.png" },
-          { name: "Next.js", icon: "/icons/nextjs.png" },
-          { name: "React", icon: "/icons/react.png" },
-          { name: "Tailwind", icon: "/icons/tailwind.png" },
-          { name: "Three.js", icon: "/icons/threejs.png" },
-          { name: "Angular", icon: "/icons/angular.png" },
-          { name: "PHP", icon: "/icons/php.png" },
+          { name: "JavaScript", icon: <SiJavascript color="#F7DF1E" /> },
+          { name: "Next.js", icon: <SiNextdotjs color="#000" /> },
+          { name: "React", icon: <SiReact color="#61DBFB" /> },
+          { name: "Tailwind CSS", icon: <SiTailwindcss color="#38BDF8" /> },
+          { name: "Three.js", icon: <SiThreedotjs color="#FFFFFF" /> },
+          { name: "Angular", icon: <SiAngular color="#DD0031" /> },
+          { name: "PHP", icon: <SiPhp color="#777BB4" /> },
         ]}
-        image="/images/webdev.jpg"
+        image="/images/5.png"
       />
 
       {/* ===== 2. E-commerce Development ===== */}
@@ -52,11 +82,11 @@ export default function DevelopmentPage() {
           "Scalable and SEO-ready store",
         ]}
         tech={[
-          { name: "Shopify", icon: "/icons/shopify.png" },
-          { name: "WordPress", icon: "/icons/wordpress.png" },
-          { name: "WooCommerce", icon: "/icons/woocommerce.png" },
-          { name: "Stripe", icon: "/icons/stripe.png" },
-          { name: "PayPal", icon: "/icons/paypal.png" },
+          { name: "Shopify", icon: <SiShopify color="#96BF48" /> },
+          { name: "WordPress", icon: <SiWordpress color="#21759B" /> },
+          { name: "WooCommerce", icon: <SiWoocommerce color="#96588A" /> },
+          { name: "Stripe", icon: <SiStripe color="#635BFF" /> },
+          { name: "PayPal", icon: <SiPaypal color="#00457C" /> },
         ]}
         image="/images/ecommerce.jpg"
         reverse
@@ -73,15 +103,16 @@ export default function DevelopmentPage() {
           "Backend integration",
         ]}
         tech={[
-          { name: "React Native", icon: "/icons/react.png" },
-          { name: "Flutter", icon: "/icons/flutter.png" },
-          { name: "iOS", icon: "/icons/ios.png" },
-          { name: "Android", icon: "/icons/android.png" },
+         { name: "React Native", icon: <SiReact color="#61DBFB" /> }, // ✅ Replaced
+
+          { name: "Flutter", icon: <SiFlutter color="#02569B" /> },
+          { name: "iOS", icon: <SiApple color="#A2AAAD" /> },
+          { name: "Android", icon: <SiAndroid color="#3DDC84" /> },
         ]}
         image="/images/mobile.jpg"
       />
 
-      {/* ===== 4. Custom Software ===== */}
+      {/* ===== 4. Custom Software Development ===== */}
       <ServiceSection
         title="Custom Software Development"
         description="Tailored business software to automate your workflows, boost efficiency, and reduce costs."
@@ -92,10 +123,11 @@ export default function DevelopmentPage() {
           "Scalable architecture",
         ]}
         tech={[
-          { name: "Node.js", icon: "/icons/nodejs.png" },
-          { name: "Python", icon: "/icons/python.png" },
-          { name: "Java", icon: "/icons/java.png" },
-          { name: ".NET", icon: "/icons/dotnet.png" },
+          { name: "Node.js", icon: <SiNodedotjs color="#339933" /> },
+          { name: "Python", icon: <SiPython color="#3776AB" /> },
+        { name: "Java", icon: <FaJava color="#007396" /> }, // ✅ Replaced with FaJava
+
+          { name: ".NET", icon: <SiDotnet color="#512BD4" /> },
         ]}
         image="/images/software.jpg"
         reverse
@@ -112,10 +144,10 @@ export default function DevelopmentPage() {
           "Cross-browser compatibility",
         ]}
         tech={[
-          { name: "Next.js", icon: "/icons/nextjs.png" },
-          { name: "Supabase", icon: "/icons/supabase.png" },
-          { name: "Firebase", icon: "/icons/firebase.png" },
-          { name: "Prisma", icon: "/icons/prisma.png" },
+          { name: "Next.js", icon: <SiNextdotjs color="#000" /> },
+          { name: "Supabase", icon: <SiSupabase color="#3ECF8E" /> },
+          { name: "Firebase", icon: <SiFirebase color="#FFCA28" /> },
+          { name: "Prisma", icon: <SiPrisma color="#2D3748" /> },
         ]}
         image="/images/webapp.jpg"
       />
@@ -131,10 +163,12 @@ export default function DevelopmentPage() {
           "Performance audits",
         ]}
         tech={[
-          { name: "AWS", icon: "/icons/aws.png" },
-          { name: "GitHub", icon: "/icons/github.png" },
-          { name: "Docker", icon: "/icons/docker.png" },
-          { name: "CI/CD", icon: "/icons/cicd.png" },
+        
+          { name: "GitHub", icon: <SiGithub color="#000" /> },
+          { name: "Docker", icon: <SiDocker color="#2496ED" /> },
+         { name: "AWS", icon: <FaAws color="#FF9900" /> }, // ✅ Replaced
+{ name: "CI/CD", icon: <FaTools color="#E24329" /> }, // ✅ Replaced
+
         ]}
         image="/images/maintenance.jpg"
         reverse

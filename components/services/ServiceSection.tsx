@@ -3,12 +3,13 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { CheckCircle } from "lucide-react";
+import React from "react"; // 👈 this import is needed because of React.ReactNode
 
 interface ServiceSectionProps {
   title: string;
   description: string;
   features: string[];
-  tech: { name: string; icon: string }[]; // icon can be image path or svg name
+  tech: { name: string; icon: React.ReactNode }[]; // ✅ fixed type here
   image: string;
   reverse?: boolean;
   cta?: string;
@@ -43,7 +44,7 @@ export default function ServiceSection({
             alt={title}
             width={600}
             height={400}
-            className="rounded-2xl shadow-lg object-cover"
+            className=" object-cover"
           />
         </motion.div>
 
@@ -81,26 +82,30 @@ export default function ServiceSection({
       </div>
 
       {/* ===== TECH WE USE ===== */}
-      <div className="mt-12 text-center">
-        <h3 className="text-xl font-semibold mb-6">Tech We Use</h3>
-        <div className="flex flex-wrap justify-center gap-6">
-          {tech.map((t) => (
-            <div
-              key={t.name}
-              className="flex items-center gap-2 bg-card shadow-sm px-4 py-2 rounded-full"
-            >
-              <Image
-                src={t.icon}
-                alt={t.name}
-                width={24}
-                height={24}
-                className="object-contain"
-              />
-              <span>{t.name}</span>
-            </div>
-          ))}
+     {/* ===== TECH WE USE ===== */}
+<div className="mt-16 text-center">
+  <h3 className="text-2xl font-bold mb-10 text-white drop-shadow-[0_0_15px_rgba(0,114,255,0.5)]">
+    Tech We Use
+  </h3>
+
+  <div className="flex flex-wrap justify-center gap-10">
+    {tech.map((t, i) => (
+      <div
+        key={i}
+        className="flex flex-col items-center justify-center w-28 h-28 rounded-2xl 
+                   backdrop-blur-md  border  shadow-[10px_0px_40px_rgba(0,114,255,0.25)] 
+                   hover:shadow-[0_0_40px_rgba(0,114,255,0.5)] hover:-translate-y-2 
+                   transition-all duration-300 ease-out"
+      >
+        <div className="text-5xl text-[#0072ff] drop-shadow-[0_0_10px_rgba(0,114,255,0.4)]">
+          {t.icon}
         </div>
+        <p className="text-sm text-[#1A14A5] mt-2 font-medium">{t.name}</p>
       </div>
+    ))}
+  </div>
+</div>
+
     </section>
   );
 }

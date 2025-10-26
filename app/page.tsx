@@ -13,6 +13,7 @@ import "./globals.css";
 // import Portfolio from "@/components/portfolio";
 
 import { StatCounter } from "@/components/stat-counter"
+import OurTechnologies from "@/components/Ourtechnologies";
 
 
 const page = () => {
@@ -25,6 +26,7 @@ const page = () => {
       <Heros />
        <StatCounter />
        <MovingText />
+       <OurTechnologies />
    
       <About />
       <Services />
