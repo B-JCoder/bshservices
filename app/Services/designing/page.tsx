@@ -35,7 +35,7 @@ export default function DesigningPage() {
           { name: "Figma", icon: "/icons/figma.png" },
           { name: "Canva", icon: "/icons/canva.png" },
         ]}
-        image="/images/branding.jpg"
+        image="/images/Designing/1.png"
       />
 
       {/* ===== 2. UI / UX Design ===== */}
@@ -54,7 +54,7 @@ export default function DesigningPage() {
           { name: "Sketch", icon: "/icons/sketch.png" },
           { name: "InVision", icon: "/icons/invision.png" },
         ]}
-        image="/images/uiux.jpg"
+        image="/images/Designing/2.png"
         reverse
       />
 
@@ -74,7 +74,7 @@ export default function DesigningPage() {
           { name: "CorelDRAW", icon: "/icons/coreldraw.png" },
           { name: "Canva", icon: "/icons/canva.png" },
         ]}
-        image="/images/graphic-design.jpg"
+        image="/images/Designing/3.png"
       />
 
       {/* ===== 4. Logo Design ===== */}
@@ -93,7 +93,7 @@ export default function DesigningPage() {
           { name: "Figma", icon: "/icons/figma.png" },
           { name: "Canva", icon: "/icons/canva.png" },
         ]}
-        image="/images/logo-design.jpg"
+        image="/images/Designing/4.png"
         reverse
       />
 
@@ -113,7 +113,7 @@ export default function DesigningPage() {
           { name: "Blender", icon: "/icons/blender.png" },
           { name: "Cinema 4D", icon: "/icons/c4d.png" },
         ]}
-        image="/images/motion-graphics.jpg"
+        image="/images/Designing/5.png"
       />
 
       {/* ===== 6. Packaging Design ===== */}
@@ -132,7 +132,7 @@ export default function DesigningPage() {
           { name: "Dimension", icon: "/icons/dimension.png" },
           { name: "Blender", icon: "/icons/blender.png" },
         ]}
-        image="/images/packaging.jpg"
+        image="/images/Designing/6.png"
         reverse
       />
 

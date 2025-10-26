@@ -35,7 +35,7 @@ export default function MarketingPage() {
           { name: "LinkedIn Ads", icon: "/icons/linkedin.png" },
           { name: "Google Analytics", icon: "/icons/analytics.png" },
         ]}
-        image="/images/ppc.jpg"
+        image="/images/Marketing/1.png"
       />
 
       {/* ===== 2. Social Media Marketing ===== */}
@@ -54,7 +54,7 @@ export default function MarketingPage() {
           { name: "Buffer", icon: "/icons/buffer.png" },
           { name: "Hootsuite", icon: "/icons/hootsuite.png" },
         ]}
-        image="/images/social-media.jpg"
+        image="/images/Marketing/2.png"
         reverse
       />
 
@@ -74,7 +74,7 @@ export default function MarketingPage() {
           { name: "Google Search Console", icon: "/icons/searchconsole.png" },
           { name: "Yoast SEO", icon: "/icons/yoast.png" },
         ]}
-        image="/images/seo.jpg"
+        image="/images/Marketing/3.png"
       />
 
       {/* ===== 4. Email Marketing ===== */}
@@ -93,7 +93,7 @@ export default function MarketingPage() {
           { name: "Klaviyo", icon: "/icons/klaviyo.png" },
           { name: "HubSpot", icon: "/icons/hubspot.png" },
         ]}
-        image="/images/email-marketing.jpg"
+        image="/images/Marketing/4.png"
         reverse
       />
 
@@ -113,7 +113,7 @@ export default function MarketingPage() {
           { name: "WordPress", icon: "/icons/wordpress.png" },
           { name: "Google Docs", icon: "/icons/docs.png" },
         ]}
-        image="/images/content-marketing.jpg"
+        image="/images/Marketing/5.png"
       />
 
       {/* ===== 6. Influencer Marketing ===== */}
@@ -132,7 +132,7 @@ export default function MarketingPage() {
           { name: "Instagram", icon: "/icons/instagram.png" },
           { name: "TikTok Creator Studio", icon: "/icons/tiktok.png" },
         ]}
-        image="/images/influencer.jpg"
+        image="/images/Marketing/6.png"
         reverse
       />
 
