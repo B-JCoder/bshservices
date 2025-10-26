@@ -78,7 +78,7 @@ export default function Form({ serviceName }: FormProps) {
   };
 
   return (
-    <section className="relative flex justify-center items-center py-20 px-6 bg-[#F4F7FE] overflow-hidden">
+    <section id="contact" className="relative flex justify-center items-center py-20 px-6 bg-[#F4F7FE] overflow-hidden">
       {/* floating soft blobs for light background */}
       <div className="absolute top-0 left-10 w-[300px] h-[300px] bg-[#1A14A5]/10 rounded-full blur-[100px] animate-pulse"></div>
       <div className="absolute bottom-0 right-10 w-[250px] h-[250px] bg-[#231F20]/10 rounded-full blur-[100px] animate-pulse"></div>
