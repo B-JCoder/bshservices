@@ -1,8 +1,32 @@
+"use client";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Hero from "@/components/services/Hero";
 import ServiceSection from "@/components/services/ServiceSection";
 import Form from "@/components/services/Form";
+
+import {
+  SiGoogleads,
+  SiMeta,
+  SiLinkedin,
+  SiGoogleanalytics,
+  SiCanva,
+  SiBuffer,
+  SiHootsuite,
+  SiSemrush,
+  SiYoast,
+  SiMailchimp,
+  SiHubspot,
+  SiNotion,
+  SiGrammarly,
+  SiWordpress,
+  SiGoogledocs,
+  SiInstagram,
+  SiTiktok,
+  SiUpwork,
+} from "react-icons/si";
+
+import { FaSearchengin, FaUserFriends, FaGoogle } from "react-icons/fa";
 
 export default function MarketingPage() {
   return (
@@ -30,10 +54,10 @@ export default function MarketingPage() {
           "Conversion tracking and optimization",
         ]}
         tech={[
-          { name: "Google Ads", icon: "/icons/googleads.png" },
-          { name: "Meta Ads", icon: "/icons/metaads.png" },
-          { name: "LinkedIn Ads", icon: "/icons/linkedin.png" },
-          { name: "Google Analytics", icon: "/icons/analytics.png" },
+          { name: "Google Ads", icon: <SiGoogleads color="#4285F4" /> },
+          { name: "Meta Ads", icon: <SiMeta color="#1877F2" /> },
+          { name: "LinkedIn Ads", icon: <SiLinkedin color="#0A66C2" /> },
+          { name: "Google Analytics", icon: <SiGoogleanalytics color="#F9AB00" /> },
         ]}
         image="/images/Marketing/1.png"
       />
@@ -49,10 +73,10 @@ export default function MarketingPage() {
           "Audience engagement & analytics",
         ]}
         tech={[
-          { name: "Meta Business Suite", icon: "/icons/meta.png" },
-          { name: "Canva", icon: "/icons/canva.png" },
-          { name: "Buffer", icon: "/icons/buffer.png" },
-          { name: "Hootsuite", icon: "/icons/hootsuite.png" },
+          { name: "Meta Business Suite", icon: <SiMeta color="#1877F2" /> },
+          { name: "Canva", icon: <SiCanva color="#00C4CC" /> },
+          { name: "Buffer", icon: <SiBuffer color="#323B43" /> },
+          { name: "Hootsuite", icon: <SiHootsuite color="#FF7A00" /> },
         ]}
         image="/images/Marketing/2.png"
         reverse
@@ -69,10 +93,10 @@ export default function MarketingPage() {
           "Performance tracking & reporting",
         ]}
         tech={[
-          { name: "Ahrefs", icon: "/icons/ahrefs.png" },
-          { name: "Semrush", icon: "/icons/semrush.png" },
-          { name: "Google Search Console", icon: "/icons/searchconsole.png" },
-          { name: "Yoast SEO", icon: "/icons/yoast.png" },
+          { name: "Semrush", icon: <SiSemrush color="#FF6B00" /> },
+          { name: "Google Search Console", icon: <FaSearchengin color="#34A853" /> },
+          { name: "Yoast SEO", icon: <SiYoast color="#A4286A" /> },
+          { name: "Google", icon: <FaGoogle color="#4285F4" /> },
         ]}
         image="/images/Marketing/3.png"
       />
@@ -88,10 +112,10 @@ export default function MarketingPage() {
           "Performance analytics",
         ]}
         tech={[
-          { name: "Mailchimp", icon: "/icons/mailchimp.png" },
-          { name: "Sendinblue", icon: "/icons/sendinblue.png" },
-          { name: "Klaviyo", icon: "/icons/klaviyo.png" },
-          { name: "HubSpot", icon: "/icons/hubspot.png" },
+          { name: "Mailchimp", icon: <SiMailchimp color="#FFE01B" /> },
+          { name: "HubSpot", icon: <SiHubspot color="#FF7A59" /> },
+          { name: "WordPress", icon: <SiWordpress color="#21759B" /> },
+          { name: "Google Docs", icon: <SiGoogledocs color="#34A853" /> },
         ]}
         image="/images/Marketing/4.png"
         reverse
@@ -108,10 +132,10 @@ export default function MarketingPage() {
           "Cross-channel distribution",
         ]}
         tech={[
-          { name: "Notion", icon: "/icons/notion.png" },
-          { name: "Grammarly", icon: "/icons/grammarly.png" },
-          { name: "WordPress", icon: "/icons/wordpress.png" },
-          { name: "Google Docs", icon: "/icons/docs.png" },
+          { name: "Notion", icon: <SiNotion color="#000" /> },
+          { name: "Grammarly", icon: <SiGrammarly color="#15C39A" /> },
+          { name: "WordPress", icon: <SiWordpress color="#21759B" /> },
+          { name: "Google Docs", icon: <SiGoogledocs color="#34A853" /> },
         ]}
         image="/images/Marketing/5.png"
       />
@@ -127,10 +151,10 @@ export default function MarketingPage() {
           "Performance measurement and reporting",
         ]}
         tech={[
-          { name: "Upfluence", icon: "/icons/upfluence.png" },
-          { name: "Heepsy", icon: "/icons/heepsy.png" },
-          { name: "Instagram", icon: "/icons/instagram.png" },
-          { name: "TikTok Creator Studio", icon: "/icons/tiktok.png" },
+          { name: "Upwork", icon: <SiUpwork color="#6FDA44" /> },
+          { name: "Community Tools", icon: <FaUserFriends color="#9333EA" /> },
+          { name: "Instagram", icon: <SiInstagram color="#E4405F" /> },
+          { name: "TikTok", icon: <SiTiktok color="#010101" /> },
         ]}
         image="/images/Marketing/6.png"
         reverse

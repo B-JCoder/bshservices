@@ -1,8 +1,27 @@
+"use client";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Hero from "@/components/services/Hero";
 import ServiceSection from "@/components/services/ServiceSection";
 import Form from "@/components/services/Form";
+
+// 🎨 React Icons Imports
+import {
+  SiAdobeillustrator,
+  SiAdobephotoshop,
+  SiFigma,
+  SiCanva,
+  SiAdobexd,
+  SiSketch,
+  SiInvision,
+  SiCoreldraw,
+  SiAffinitydesigner,
+  SiAdobepremierepro,
+  SiAdobeaftereffects,
+  SiBlender,
+  SiCinema4D,
+} from "react-icons/si";
+import { FaBoxOpen } from "react-icons/fa";
 
 export default function DesigningPage() {
   return (
@@ -30,10 +49,10 @@ export default function DesigningPage() {
           "Consistent visual identity design",
         ]}
         tech={[
-          { name: "Adobe Illustrator", icon: "/icons/illustrator.png" },
-          { name: "Photoshop", icon: "/icons/photoshop.png" },
-          { name: "Figma", icon: "/icons/figma.png" },
-          { name: "Canva", icon: "/icons/canva.png" },
+          { name: "Adobe Illustrator", icon: <SiAdobeillustrator color="#FF9A00" /> },
+          { name: "Adobe Photoshop", icon: <SiAdobephotoshop color="#31A8FF" /> },
+          { name: "Figma", icon: <SiFigma color="#F24E1E" /> },
+          { name: "Canva", icon: <SiCanva color="#00C4CC" /> },
         ]}
         image="/images/Designing/1.png"
       />
@@ -49,10 +68,10 @@ export default function DesigningPage() {
           "Design system creation",
         ]}
         tech={[
-          { name: "Figma", icon: "/icons/figma.png" },
-          { name: "Adobe XD", icon: "/icons/xd.png" },
-          { name: "Sketch", icon: "/icons/sketch.png" },
-          { name: "InVision", icon: "/icons/invision.png" },
+          { name: "Figma", icon: <SiFigma color="#F24E1E" /> },
+          { name: "Adobe XD", icon: <SiAdobexd color="#FF61F6" /> },
+          { name: "Sketch", icon: <SiSketch color="#F7B500" /> },
+          { name: "InVision", icon: <SiInvision color="#FF3366" /> },
         ]}
         image="/images/Designing/2.png"
         reverse
@@ -69,10 +88,10 @@ export default function DesigningPage() {
           "Ad banners and marketing visuals",
         ]}
         tech={[
-          { name: "Adobe Photoshop", icon: "/icons/photoshop.png" },
-          { name: "Illustrator", icon: "/icons/illustrator.png" },
-          { name: "CorelDRAW", icon: "/icons/coreldraw.png" },
-          { name: "Canva", icon: "/icons/canva.png" },
+          { name: "Photoshop", icon: <SiAdobephotoshop color="#31A8FF" /> },
+          { name: "Illustrator", icon: <SiAdobeillustrator color="#FF9A00" /> },
+          { name: "CorelDRAW", icon: <SiCoreldraw color="#00A550" /> },
+          { name: "Canva", icon: <SiCanva color="#00C4CC" /> },
         ]}
         image="/images/Designing/3.png"
       />
@@ -88,10 +107,10 @@ export default function DesigningPage() {
           "Brand alignment and scalability",
         ]}
         tech={[
-          { name: "Adobe Illustrator", icon: "/icons/illustrator.png" },
-          { name: "Affinity Designer", icon: "/icons/affinity.png" },
-          { name: "Figma", icon: "/icons/figma.png" },
-          { name: "Canva", icon: "/icons/canva.png" },
+          { name: "Adobe Illustrator", icon: <SiAdobeillustrator color="#FF9A00" /> },
+          { name: "Affinity Designer", icon: <SiAffinitydesigner color="#7E4DD2" /> },
+          { name: "Figma", icon: <SiFigma color="#F24E1E" /> },
+          { name: "Canva", icon: <SiCanva color="#00C4CC" /> },
         ]}
         image="/images/Designing/4.png"
         reverse
@@ -108,10 +127,10 @@ export default function DesigningPage() {
           "Cinematic transitions & effects",
         ]}
         tech={[
-          { name: "After Effects", icon: "/icons/aftereffects.png" },
-          { name: "Premiere Pro", icon: "/icons/premiere.png" },
-          { name: "Blender", icon: "/icons/blender.png" },
-          { name: "Cinema 4D", icon: "/icons/c4d.png" },
+          { name: "After Effects", icon: <SiAdobeaftereffects color="#9999FF" /> },
+          { name: "Premiere Pro", icon: <SiAdobepremierepro color="#9999FF" /> },
+          { name: "Blender", icon: <SiBlender color="#F5792A" /> },
+          { name: "Cinema 4D", icon: <SiCinema4D color="#011A6A" /> },
         ]}
         image="/images/Designing/5.png"
       />
@@ -127,10 +146,10 @@ export default function DesigningPage() {
           "Material and color guidance",
         ]}
         tech={[
-          { name: "Adobe Illustrator", icon: "/icons/illustrator.png" },
-          { name: "Photoshop", icon: "/icons/photoshop.png" },
-          { name: "Dimension", icon: "/icons/dimension.png" },
-          { name: "Blender", icon: "/icons/blender.png" },
+          { name: "Adobe Illustrator", icon: <SiAdobeillustrator color="#FF9A00" /> },
+          { name: "Adobe Photoshop", icon: <SiAdobephotoshop color="#31A8FF" /> },
+          { name: "Blender", icon: <SiBlender color="#F5792A" /> },
+          { name: "3D Mockup", icon: <FaBoxOpen color="#00AEEF" /> },
         ]}
         image="/images/Designing/6.png"
         reverse
