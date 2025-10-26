@@ -1,8 +1,29 @@
+"use client";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Hero from "@/components/services/Hero";
 import ServiceSection from "@/components/services/ServiceSection";
 import Form from "@/components/services/Form";
+
+import {
+  FaCamera,
+  FaVideo,
+  FaImage,
+  FaRegImages,
+  FaFilm,
+  FaPhotoVideo,
+  FaEdit,
+} from "react-icons/fa";
+
+import {
+  SiAdobephotoshop,
+  SiAdobelightroom,
+  SiAdobepremierepro,
+  SiDavinciresolve,
+  SiAdobeaftereffects,
+  SiCanva,
+} from "react-icons/si";
+
 
 export default function PhotographyPage() {
   return (
@@ -30,12 +51,12 @@ export default function PhotographyPage() {
           "High-resolution product retouching",
         ]}
         tech={[
-          { name: "Canon EOS R5", icon: "/icons/camera.png" },
-          { name: "Lightroom", icon: "/icons/lightroom.png" },
-          { name: "Photoshop", icon: "/icons/photoshop.png" },
-          { name: "Capture One", icon: "/icons/captureone.png" },
+          { name: "Camera", icon: <FaCamera color="#222" /> },
+          { name: "Lightroom", icon: <SiAdobelightroom color="#31A8FF" /> },
+          { name: "Photoshop", icon: <SiAdobephotoshop color="#31A8FF" /> },
+          { name: "Canva", icon: <SiCanva color="#00C4CC" /> },
         ]}
-        image="/images/product-photo.jpg"
+        image="/images/Marketing/1.png"
       />
 
       {/* ===== 2. Brand Shoots ===== */}
@@ -49,12 +70,12 @@ export default function PhotographyPage() {
           "Consistent visual branding",
         ]}
         tech={[
-          { name: "Sony A7R IV", icon: "/icons/sony.png" },
-          { name: "Lightroom", icon: "/icons/lightroom.png" },
-          { name: "Photoshop", icon: "/icons/photoshop.png" },
-          { name: "Figma", icon: "/icons/figma.png" },
+          { name: "Camera Setup", icon: <FaPhotoVideo color="#111" /> },
+          { name: "Lightroom", icon: <SiAdobelightroom color="#31A8FF" /> },
+          { name: "Photoshop", icon: <SiAdobephotoshop color="#31A8FF" /> },
+          { name: "Canva", icon: <SiCanva color="#00C4CC" /> },
         ]}
-        image="/images/brand-shoot.jpg"
+        image="/images/Marketing/2.png"
         reverse
       />
 
@@ -69,12 +90,12 @@ export default function PhotographyPage() {
           "Photo and video package options",
         ]}
         tech={[
-          { name: "Nikon Z8", icon: "/icons/nikon.png" },
-          { name: "Adobe Lightroom", icon: "/icons/lightroom.png" },
-          { name: "Premiere Pro", icon: "/icons/premiere.png" },
-          { name: "DaVinci Resolve", icon: "/icons/davinci.png" },
+          { name: "Camera", icon: <FaCamera color="#333" /> },
+          { name: "Lightroom", icon: <SiAdobelightroom color="#31A8FF" /> },
+          { name: "Premiere Pro", icon: <SiAdobepremierepro color="#9999FF" /> },
+      
         ]}
-        image="/images/event-coverage.jpg"
+        image="/images/Marketing/3.png"
       />
 
       {/* ===== 4. Video Production ===== */}
@@ -88,12 +109,12 @@ export default function PhotographyPage() {
           "Sound design and motion graphics",
         ]}
         tech={[
-          { name: "Blackmagic 6K", icon: "/icons/blackmagic.png" },
-          { name: "Premiere Pro", icon: "/icons/premiere.png" },
-          { name: "After Effects", icon: "/icons/aftereffects.png" },
-          { name: "DaVinci Resolve", icon: "/icons/davinci.png" },
+          { name: "Filming", icon: <FaVideo color="#000" /> },
+          { name: "Premiere Pro", icon: <SiAdobepremierepro color="#9999FF" /> },
+          { name: "After Effects", icon: <SiAdobeaftereffects color="#D291FF" /> },
+    
         ]}
-        image="/images/video-production.jpg"
+        image="/images/Marketing/4.png"
         reverse
       />
 
@@ -108,12 +129,12 @@ export default function PhotographyPage() {
           "Batch export for web & print",
         ]}
         tech={[
-          { name: "Photoshop", icon: "/icons/photoshop.png" },
-          { name: "Lightroom", icon: "/icons/lightroom.png" },
-          { name: "Capture One", icon: "/icons/captureone.png" },
-          { name: "DaVinci Resolve", icon: "/icons/davinci.png" },
+          { name: "Photoshop", icon: <SiAdobephotoshop color="#31A8FF" /> },
+          { name: "Lightroom", icon: <SiAdobelightroom color="#31A8FF" /> },
+          { name: "After Effects", icon: <SiAdobeaftereffects color="#D291FF" /> },
+
         ]}
-        image="/images/editing-retouching.jpg"
+        image="/images/Marketing/5.png"
       />
 
       {/* ===== 6. Drone Photography ===== */}
@@ -127,12 +148,12 @@ export default function PhotographyPage() {
           "Post-production editing and color work",
         ]}
         tech={[
-          { name: "DJI Mavic 3", icon: "/icons/dji.png" },
-          { name: "Air 2S", icon: "/icons/drone.png" },
-          { name: "Premiere Pro", icon: "/icons/premiere.png" },
-          { name: "After Effects", icon: "/icons/aftereffects.png" },
+     
+          { name: "Camera", icon: <FaCamera color="#444" /> },
+          { name: "Premiere Pro", icon: <SiAdobepremierepro color="#9999FF" /> },
+      
         ]}
-        image="/images/drone-photo.jpg"
+        image="/images/Marketing/6.png"
         reverse
       />
 
