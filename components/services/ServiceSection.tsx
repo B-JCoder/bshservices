@@ -84,7 +84,7 @@ export default function ServiceSection({
       {/* ===== TECH WE USE ===== */}
      {/* ===== TECH WE USE ===== */}
 <div className="mt-16 text-center">
-  <h3 className="text-2xl font-bold mb-10 text-white drop-shadow-[0_0_15px_rgba(0,114,255,0.5)]">
+  <h3 className="text-2xl font-bold mb-10 text-[#0f0b7a] drop-shadow-[0_0_15px_rgba(0,114,255,0.5)]">
     Tech We Use
   </h3>
 

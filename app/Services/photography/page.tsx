@@ -1,20 +1,21 @@
 "use client";
+
 import Header from "@/components/header";
 import Footer from "@/components/footer";
 import Hero from "@/components/services/Hero";
 import ServiceSection from "@/components/services/ServiceSection";
 import Form from "@/components/services/Form";
 
+// ==== ICONS ====
 import {
   FaCamera,
   FaVideo,
-  FaImage,
-  FaRegImages,
-  FaFilm,
   FaPhotoVideo,
-  FaEdit,
+  FaMicrophoneAlt,
 } from "react-icons/fa";
-
+import {
+  MdOutlineColorLens,
+} from "react-icons/md";
 import {
   SiAdobephotoshop,
   SiAdobelightroom,
@@ -23,7 +24,7 @@ import {
   SiAdobeaftereffects,
   SiCanva,
 } from "react-icons/si";
-
+import { TbDrone, TbCameraSelfie } from "react-icons/tb"; // ✅ Real Tabler icons (Tripod + Drone alternatives)
 
 export default function PhotographyPage() {
   return (
@@ -56,7 +57,7 @@ export default function PhotographyPage() {
           { name: "Photoshop", icon: <SiAdobephotoshop color="#31A8FF" /> },
           { name: "Canva", icon: <SiCanva color="#00C4CC" /> },
         ]}
-        image="/images/Marketing/1.png"
+        image="/images/Photography/1.png"
       />
 
       {/* ===== 2. Brand Shoots ===== */}
@@ -71,11 +72,11 @@ export default function PhotographyPage() {
         ]}
         tech={[
           { name: "Camera Setup", icon: <FaPhotoVideo color="#111" /> },
-          { name: "Lightroom", icon: <SiAdobelightroom color="#31A8FF" /> },
+          { name: "Tripod & Lighting", icon: <TbCameraSelfie color="#666" /> },
           { name: "Photoshop", icon: <SiAdobephotoshop color="#31A8FF" /> },
-          { name: "Canva", icon: <SiCanva color="#00C4CC" /> },
+          { name: "Lightroom", icon: <SiAdobelightroom color="#31A8FF" /> },
         ]}
-        image="/images/Marketing/2.png"
+        image="/images/Photography/2.png"
         reverse
       />
 
@@ -91,11 +92,11 @@ export default function PhotographyPage() {
         ]}
         tech={[
           { name: "Camera", icon: <FaCamera color="#333" /> },
-          { name: "Lightroom", icon: <SiAdobelightroom color="#31A8FF" /> },
+          { name: "Microphone", icon: <FaMicrophoneAlt color="#999" /> },
           { name: "Premiere Pro", icon: <SiAdobepremierepro color="#9999FF" /> },
-      
+          { name: "DaVinci Resolve", icon: <SiDavinciresolve color="#223FFF" /> },
         ]}
-        image="/images/Marketing/3.png"
+        image="/images/Photography/3.png"
       />
 
       {/* ===== 4. Video Production ===== */}
@@ -112,9 +113,9 @@ export default function PhotographyPage() {
           { name: "Filming", icon: <FaVideo color="#000" /> },
           { name: "Premiere Pro", icon: <SiAdobepremierepro color="#9999FF" /> },
           { name: "After Effects", icon: <SiAdobeaftereffects color="#D291FF" /> },
-    
+          { name: "DaVinci Resolve", icon: <SiDavinciresolve color="#223FFF" /> },
         ]}
-        image="/images/Marketing/4.png"
+        image="/images/Photography/4.png"
         reverse
       />
 
@@ -132,9 +133,9 @@ export default function PhotographyPage() {
           { name: "Photoshop", icon: <SiAdobephotoshop color="#31A8FF" /> },
           { name: "Lightroom", icon: <SiAdobelightroom color="#31A8FF" /> },
           { name: "After Effects", icon: <SiAdobeaftereffects color="#D291FF" /> },
-
+          { name: "Color Tools", icon: <MdOutlineColorLens color="#F5B041" /> },
         ]}
-        image="/images/Marketing/5.png"
+        image="/images/Photography/5.png"
       />
 
       {/* ===== 6. Drone Photography ===== */}
@@ -148,12 +149,12 @@ export default function PhotographyPage() {
           "Post-production editing and color work",
         ]}
         tech={[
-     
+          { name: "Drone", icon: <TbDrone color="#111" /> },
           { name: "Camera", icon: <FaCamera color="#444" /> },
           { name: "Premiere Pro", icon: <SiAdobepremierepro color="#9999FF" /> },
-      
+          { name: "DaVinci Resolve", icon: <SiDavinciresolve color="#223FFF" /> },
         ]}
-        image="/images/Marketing/6.png"
+        image="/images/Photography/6.png"
         reverse
       />
 
