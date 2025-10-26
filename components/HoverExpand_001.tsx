@@ -8,6 +8,7 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay";
 
 import { cn } from "@/lib/utils";
+import Image from "next/image";
 
 const Skiper52 = () => {
  const images = [
@@ -137,10 +138,12 @@ const HoverExpand_001 = ({
               </AnimatePresence>
 
    
-              <img
+              <Image
                 src={image.src}
                 alt={image.alt}
                 className="w-full h-full object-cover"
+                width={500}
+                height={500}
               />
             </motion.div>
           ))}

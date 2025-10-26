@@ -143,7 +143,7 @@ const Header = () => {
         {/* Right - Buttons */}
         <div className="hidden md:flex space-x-3">
           <Button className="bg-[#1A14A5] text-white shadow-md hover:bg-[#231F20] rounded-2xl px-5" asChild>
-            <Link href="/Contact">Contact</Link>
+            <Link href="/#contact">Contact</Link>
           </Button>
           <Button
             variant="outline"
@@ -209,7 +209,7 @@ const Header = () => {
           </Link> */}
           <div className="flex flex-col gap-3 pt-4">
             <Button className="bg-[#1A14A5] text-white shadow-md hover:bg-[#231F20] rounded-2xl" asChild>
-              <Link href="/Contact">Contact</Link>
+              <Link href="/#contact">Contact</Link>
             </Button>
             <Button
               variant="outline"

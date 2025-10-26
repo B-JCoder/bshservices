@@ -273,7 +273,7 @@ export default function Services(): JSX.Element {
                   alt={`${activeTab.title} service illustration`}
                   fill
                   priority
-                  quality={100}
+                
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 90vw, 1200px"
                   className="object-cover"
                 />

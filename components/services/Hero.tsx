@@ -22,7 +22,6 @@ export default function Hero({ title, subtitle, image }: HeroProps) {
         alt={`${title} background`}
         fill
         priority
-        quality={100}
         sizes="100vw"
         className="object-cover object-center brightness-75"
       />

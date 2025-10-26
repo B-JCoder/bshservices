@@ -43,7 +43,7 @@ import {
   SiMailchimp,
 
 
-  SiHubspot,
+  
  
   SiSemrush,
   SiGoogle,
