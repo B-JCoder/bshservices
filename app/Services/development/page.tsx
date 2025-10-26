@@ -68,7 +68,7 @@ export default function DevelopmentPage() {
           { name: "Angular", icon: <SiAngular color="#DD0031" /> },
           { name: "PHP", icon: <SiPhp color="#777BB4" /> },
         ]}
-        image="/images/5.png"
+        image="/images/development/1.png"
       />
 
       {/* ===== 2. E-commerce Development ===== */}
@@ -88,7 +88,7 @@ export default function DevelopmentPage() {
           { name: "Stripe", icon: <SiStripe color="#635BFF" /> },
           { name: "PayPal", icon: <SiPaypal color="#00457C" /> },
         ]}
-        image="/images/ecommerce.jpg"
+        image="/images/development/2.png"
         reverse
       />
 
@@ -109,7 +109,7 @@ export default function DevelopmentPage() {
           { name: "iOS", icon: <SiApple color="#A2AAAD" /> },
           { name: "Android", icon: <SiAndroid color="#3DDC84" /> },
         ]}
-        image="/images/mobile.jpg"
+        image="/images/development/3.png"
       />
 
       {/* ===== 4. Custom Software Development ===== */}
@@ -129,7 +129,7 @@ export default function DevelopmentPage() {
 
           { name: ".NET", icon: <SiDotnet color="#512BD4" /> },
         ]}
-        image="/images/software.jpg"
+        image="/images/development/4.png"
         reverse
       />
 
@@ -149,7 +149,7 @@ export default function DevelopmentPage() {
           { name: "Firebase", icon: <SiFirebase color="#FFCA28" /> },
           { name: "Prisma", icon: <SiPrisma color="#2D3748" /> },
         ]}
-        image="/images/webapp.jpg"
+        image="/images/development/5.png"
       />
 
       {/* ===== 6. Maintenance & Support ===== */}
@@ -170,7 +170,7 @@ export default function DevelopmentPage() {
 { name: "CI/CD", icon: <FaTools color="#E24329" /> }, // ✅ Replaced
 
         ]}
-        image="/images/maintenance.jpg"
+        image="/images/development/6.png"
         reverse
       />
 
