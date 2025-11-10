@@ -27,12 +27,11 @@ import {
   SiSupabase,
   SiFirebase,
   SiPrisma,
-
   SiGithub,
   SiDocker,
 } from "react-icons/si";
 
-import { FaJava, FaAws, FaTools } from "react-icons/fa"; 
+import { FaJava, FaAws, FaTools } from "react-icons/fa";
 
 export default function DevelopmentPage() {
   return (
@@ -51,6 +50,7 @@ export default function DevelopmentPage() {
 
       {/* ===== 1. Website Development ===== */}
       <ServiceSection
+        id="website-development"
         title="Website Development"
         description="We build responsive, SEO-friendly, and visually appealing websites that elevate your online presence."
         features={[
@@ -73,6 +73,7 @@ export default function DevelopmentPage() {
 
       {/* ===== 2. E-commerce Development ===== */}
       <ServiceSection
+        id="ecommerce-development"
         title="E-Commerce Development"
         description="Launch your custom online store with secure payment gateways and effortless management."
         features={[
@@ -94,6 +95,7 @@ export default function DevelopmentPage() {
 
       {/* ===== 3. Mobile App Development ===== */}
       <ServiceSection
+        id="mobile-app-development"
         title="Mobile App Development"
         description="We design and build high-performance mobile apps that deliver seamless experiences across all devices."
         features={[
@@ -103,8 +105,7 @@ export default function DevelopmentPage() {
           "Backend integration",
         ]}
         tech={[
-         { name: "React Native", icon: <SiReact color="#61DBFB" /> }, // ✅ Replaced
-
+          { name: "React Native", icon: <SiReact color="#61DBFB" /> },
           { name: "Flutter", icon: <SiFlutter color="#02569B" /> },
           { name: "iOS", icon: <SiApple color="#A2AAAD" /> },
           { name: "Android", icon: <SiAndroid color="#3DDC84" /> },
@@ -114,6 +115,7 @@ export default function DevelopmentPage() {
 
       {/* ===== 4. Custom Software Development ===== */}
       <ServiceSection
+        id="custom-software-development"
         title="Custom Software Development"
         description="Tailored business software to automate your workflows, boost efficiency, and reduce costs."
         features={[
@@ -125,8 +127,7 @@ export default function DevelopmentPage() {
         tech={[
           { name: "Node.js", icon: <SiNodedotjs color="#339933" /> },
           { name: "Python", icon: <SiPython color="#3776AB" /> },
-        { name: "Java", icon: <FaJava color="#007396" /> }, // ✅ Replaced with FaJava
-
+          { name: "Java", icon: <FaJava color="#007396" /> },
           { name: ".NET", icon: <SiDotnet color="#512BD4" /> },
         ]}
         image="/images/development/4.png"
@@ -135,6 +136,7 @@ export default function DevelopmentPage() {
 
       {/* ===== 5. Web Applications ===== */}
       <ServiceSection
+        id="web-applications"
         title="Web Applications"
         description="Interactive, API-driven web apps built with cutting-edge technology to deliver exceptional performance."
         features={[
@@ -154,6 +156,7 @@ export default function DevelopmentPage() {
 
       {/* ===== 6. Maintenance & Support ===== */}
       <ServiceSection
+        id="maintenance-support"
         title="Maintenance & Support"
         description="We ensure your systems stay updated, secure, and running at top performance round the clock."
         features={[
@@ -163,18 +166,18 @@ export default function DevelopmentPage() {
           "Performance audits",
         ]}
         tech={[
-        
           { name: "GitHub", icon: <SiGithub color="#000" /> },
           { name: "Docker", icon: <SiDocker color="#2496ED" /> },
-         { name: "AWS", icon: <FaAws color="#FF9900" /> }, // ✅ Replaced
-{ name: "CI/CD", icon: <FaTools color="#E24329" /> }, // ✅ Replaced
-
+          { name: "AWS", icon: <FaAws color="#FF9900" /> },
+          { name: "CI/CD", icon: <FaTools color="#E24329" /> },
         ]}
         image="/images/development/6.png"
         reverse
       />
-
-      <Form serviceName="Development" />
+<section id="development-form">
+  <Form serviceName="Development" />
+</section>
+      
       <Footer />
     </>
   );

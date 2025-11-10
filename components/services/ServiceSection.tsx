@@ -3,19 +3,21 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { CheckCircle } from "lucide-react";
-import React from "react"; // 👈 this import is needed because of React.ReactNode
+import React from "react"; // 👈 required for React.ReactNode
 
 interface ServiceSectionProps {
+  id?: string; // ✅ Added this line
   title: string;
   description: string;
   features: string[];
-  tech: { name: string; icon: React.ReactNode }[]; // ✅ fixed type here
+  tech: { name: string; icon: React.ReactNode }[];
   image: string;
   reverse?: boolean;
   cta?: string;
 }
 
 export default function ServiceSection({
+  id, // ✅ Accepting id prop
   title,
   description,
   features,
@@ -25,7 +27,7 @@ export default function ServiceSection({
   cta = "Get Started",
 }: ServiceSectionProps) {
   return (
-    <section className="py-20 bg-background border-b border-border">
+    <section id={id} className="py-20 bg-background border-b border-border"> {/* ✅ Applied id */}
       <div
         className={`max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12 px-6 ${
           reverse ? "md:flex-row-reverse" : ""
@@ -44,7 +46,7 @@ export default function ServiceSection({
             alt={title}
             width={600}
             height={400}
-            className=" object-cover"
+            className="object-cover"
           />
         </motion.div>
 
@@ -82,30 +84,28 @@ export default function ServiceSection({
       </div>
 
       {/* ===== TECH WE USE ===== */}
-     {/* ===== TECH WE USE ===== */}
-<div className="mt-16 text-center">
-  <h3 className="text-2xl font-bold mb-10 text-[#0f0b7a] drop-shadow-[0_0_15px_rgba(0,114,255,0.5)]">
-    Tech We Use
-  </h3>
+      <div className="mt-16 text-center">
+        <h3 className="text-2xl font-bold mb-10 text-[#0f0b7a] drop-shadow-[0_0_15px_rgba(0,114,255,0.5)]">
+          Tech We Use
+        </h3>
 
-  <div className="flex flex-wrap justify-center gap-10">
-    {tech.map((t, i) => (
-      <div
-        key={i}
-        className="flex flex-col items-center justify-center w-28 h-28 rounded-2xl 
-                   backdrop-blur-md  border  shadow-[10px_0px_40px_rgba(0,114,255,0.25)] 
-                   hover:shadow-[0_0_40px_rgba(0,114,255,0.5)] hover:-translate-y-2 
-                   transition-all duration-300 ease-out"
-      >
-        <div className="text-5xl text-[#0072ff] drop-shadow-[0_0_10px_rgba(0,114,255,0.4)]">
-          {t.icon}
+        <div className="flex flex-wrap justify-center gap-10">
+          {tech.map((t, i) => (
+            <div
+              key={i}
+              className="flex flex-col items-center justify-center w-28 h-28 rounded-2xl 
+                        backdrop-blur-md border shadow-[10px_0px_40px_rgba(0,114,255,0.25)] 
+                        hover:shadow-[0_0_40px_rgba(0,114,255,0.5)] hover:-translate-y-2 
+                        transition-all duration-300 ease-out"
+            >
+              <div className="text-5xl text-[#0072ff] drop-shadow-[0_0_10px_rgba(0,114,255,0.4)]">
+                {t.icon}
+              </div>
+              <p className="text-sm text-[#1A14A5] mt-2 font-medium">{t.name}</p>
+            </div>
+          ))}
         </div>
-        <p className="text-sm text-[#1A14A5] mt-2 font-medium">{t.name}</p>
       </div>
-    ))}
-  </div>
-</div>
-
     </section>
   );
 }

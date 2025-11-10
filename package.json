@@ -51,5 +51,13 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/B-JCoder/bshservices.git"
+  },
+  "bugs": {
+    "url": "https://github.com/B-JCoder/bshservices/issues"
+  },
+  "homepage": "https://github.com/B-JCoder/bshservices#readme"
 }
