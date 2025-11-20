@@ -73,7 +73,7 @@ const ProcessFlow = () => {
 
   useEffect(() => {
     const ctx = gsap.context(() => {
-      // Step card animation
+      // Step fade-in animation
       gsap.utils.toArray<HTMLElement>(".step-card").forEach((el, i) => {
         gsap.fromTo(
           el,
@@ -91,7 +91,7 @@ const ProcessFlow = () => {
         );
       });
 
-      // Vertical line glowing scroll animation
+      // Vertical glowing line scroll animation
       gsap.fromTo(
         ".timeline-line",
         { height: 0 },
@@ -127,7 +127,7 @@ const ProcessFlow = () => {
         Our Work Process
       </motion.h2>
 
-      {/* Center Timeline Line */}
+      {/* Center Vertical Timeline Line */}
       <div className="absolute left-1/2 top-35 w-[4px] h-full bg-gradient-to-b from-[#1A14A5] to-[#4b35ff] rounded-full timeline-line shadow-[0_0_25px_rgba(26,20,165,0.4)]"></div>
 
       {/* Steps */}
@@ -141,15 +141,20 @@ const ProcessFlow = () => {
             whileHover={{ scale: 1.05 }}
             transition={{ type: "spring", stiffness: 180 }}
           >
-            {/* Connecting Line Circle */}
+            {/* Connecting Dot */}
             <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-gradient-to-r from-[#1A14A5] to-[#4b35ff] rounded-full border-4 border-white shadow-[0_0_20px_rgba(26,20,165,0.5)] z-10"></div>
 
-            {/* Connector Arm */}
-            <div
-              className={`absolute top-1/2 ${
-                index % 2 === 0 ? "right-[15%]" : "left-[15%]"
-              } w-[18vw] h-[2px] bg-gradient-to-r from-[#1A14A5] to-[#4b35ff] shadow-[0_0_15px_rgba(74,58,255,0.6)]`}
-            ></div>
+        {/* Horizontal Connector Line (Box edge → Dot) */}
+<div
+  className={`absolute top-1/2 h-[2px] bg-gradient-to-r from-[#1A14A5] to-[#4b35ff] shadow-[0_0_15px_rgba(74,58,255,0.6)]`}
+  style={{
+    left: index % 2 === 0 ? "auto" : "10%", // left box: start from right edge
+    right: index % 2 === 0 ? "10%" : "auto", // right box: start from left edge
+    transform: index % 2 === 0 ? "translateX(0)" : "translateX(0)",
+    width: "calc(40% - 12px)", // dynamic width: dot is centered, box edge to dot
+  }}
+></div>
+
 
             {/* Step Box */}
             <div
@@ -157,10 +162,10 @@ const ProcessFlow = () => {
                 index % 2 === 0 ? "sm:text-left" : "sm:text-right"
               }`}
             >
-              {/* Glow */}
+              {/* Glow Behind Box */}
               <div className="absolute inset-0 -z-10 bg-gradient-to-r from-[#1A14A5]/25 to-[#4b35ff]/25 rounded-3xl blur-lg animate-pulse"></div>
 
-              {/* Icon */}
+              {/* Icon Animation */}
               <motion.div
                 animate={{
                   y: [0, -6, 0],
