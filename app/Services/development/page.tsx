@@ -151,7 +151,7 @@ export default function DevelopmentPage() {
           { name: "Firebase", icon: <SiFirebase color="#FFCA28" /> },
           { name: "Prisma", icon: <SiPrisma color="#2D3748" /> },
         ]}
-        image="/images/development/5.png"
+        image="/images/develophdjdment/5.png"
       />
 
       {/* ===== 6. Maintenance & Support ===== */}

@@ -38,7 +38,7 @@ const Header = () => {
         {/* Left - Logo */}
         <Link href="/" className="flex items-center">
           <Image
-            src="/images/noghlogo.png"
+            src="/images/3dlogobgrewtx.png"
             alt="logo"
             width={60}
             height={60}
