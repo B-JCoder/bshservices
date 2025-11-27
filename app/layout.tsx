@@ -30,6 +30,10 @@ export const metadata: Metadata = {
     "Mobile App Development",
     "Tech Services",
   ],
+   other: {
+    "google-site-verification":
+      "mftol86q7hauVyXwfTJDkzh6lEIO_NfdlDqR24A6y_4",
+  },
   authors: [{ name: "BSH Solutions", url: "https://bshsolutionss.com" }],
   openGraph: {
     title: "BSH Solutions | Business Smart Hub",
