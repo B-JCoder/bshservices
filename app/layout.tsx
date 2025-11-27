@@ -87,6 +87,23 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+        <script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      name: "BSH Solutions",
+      url: "https://bshsolutionss.com",
+      logo: "https://bshsolutionss.com/android-chrome-512x512.png",
+      sameAs: [
+        "https://facebook.com/bshsolutions",
+        "https://instagram.com/bshsolutions",
+      ],
+    }),
+  }}
+/>
+
       </body>
     </html>
   );
