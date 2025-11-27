@@ -44,7 +44,7 @@ const page = () => {
         name="Muhammad Bilal"
         role="Full Stack Developer & SEO Specialist"
         about="Bilal is a skilled full stack developer with a strong command of modern web technologies. He also specializes in SEO, helping businesses grow organically through smart optimization strategies."
-        image="/team/bilal.jpg" // 👉 Add your actual image here
+        image="/team/bilal.png" // 👉 Add your actual image here
         cvLink="/cv/muhammad-bilal.pdf"
         tech={[
           { name: "React", icon: <SiReact /> },
