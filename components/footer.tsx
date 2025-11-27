@@ -72,14 +72,14 @@ const Footer = () => {
               <span>Karachi, Pakistan</span>
             </div>
                 <div className="flex gap-5 mt-4">
-            <Link href="https://www.facebook.com/people/BSH-Solutions/61582682037084/" className="p-2 rounded-full bg-[#1A14A5]/10 shadow-lg hover:scale-110 transition">
+            <Link href="https://www.facebook.com/bshsolutions" className="p-2 rounded-full bg-[#1A14A5]/10 shadow-lg hover:scale-110 transition">
               <Facebook className="text-[#1A14A5]" />
             </Link>
-            <Link href="https://www.instagram.com/bshsolutions_/" className="p-2 rounded-full bg-[#1A14A5]/10 shadow-lg hover:scale-110 transition">
+            <Link href="https://www.instagram.com/bshsolutionss" className="p-2 rounded-full bg-[#1A14A5]/10 shadow-lg hover:scale-110 transition">
               <Instagram className="text-[#1A14A5]" />
             </Link>
             
-            <Link href="https://www.linkedin.com/company/bsh-solutionss/" className="p-2 rounded-full bg-[#1A14A5]/10 shadow-lg hover:scale-110 transition">
+            <Link href="https://www.linkedin.com/company/bshsolutions" className="p-2 rounded-full bg-[#1A14A5]/10 shadow-lg hover:scale-110 transition">
               <Linkedin className="text-[#1A14A5]" />
             </Link>
           </div>
