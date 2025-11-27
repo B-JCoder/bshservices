@@ -1,29 +1,29 @@
-import { MetadataRoute } from 'next';
+import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: 'https://bshsolutionss.com/',
+      url: "https://bshsolutionss.com",
       lastModified: new Date(),
     },
     {
-      url: 'https://bshsolutionss.com/about',
+      url: "https://bshsolutionss.com/about",
       lastModified: new Date(),
     },
     {
-      url: 'https://bshsolutionss.com/Services/development',
+      url: "https://bshsolutionss.com/Services/development",
       lastModified: new Date(),
     },
     {
-      url: 'https://bshsolutionss.com/Services/designing',
+      url: "https://bshsolutionss.com/Services/designing",
       lastModified: new Date(),
     },
     {
-      url: 'https://bshsolutionss.com/Services/marketing',
+      url: "https://bshsolutionss.com/Services/marketing",
       lastModified: new Date(),
     },
     {
-      url: 'https://bshsolutionss.com/Services/photography',
+      url: "https://bshsolutionss.com/Services/photography",
       lastModified: new Date(),
     },
   ];
