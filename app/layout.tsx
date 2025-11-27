@@ -41,13 +41,13 @@ export const metadata: Metadata = {
       "A hub for all business tech needs — innovative, scalable, and smart IT solutions for your business.",
     url: "https://bshsolutionss.com",
     siteName: "BSH Solutions",
-    images: [
-      {
-        url: "/android-chrome-512x512.png",
-        width: 512,
-        height: 512,
-        alt: "BSH Solutions Logo",
-      },
+     images: [
+    {
+      url: "https://bshsolutionss.com/android-chrome-512x512.png",
+      width: 1200,
+      height: 630,
+      alt: "BSH Solutions - Business Smart Hub",
+    },
     ],
     locale: "en_US",
     type: "website",
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "BSH Solutions | Business Smart Hub",
     description: "A hub for all business tech needs — powered by BSH Solutions.",
-    images: ["/android-chrome-512x512.png"],
+    images: ["https://bshsolutionss.com/android-chrome-512x512.png"],
     creator: "@bshsolutions",
   },
   icons: {
