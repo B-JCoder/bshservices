@@ -16,6 +16,7 @@ export default function Hero({ title, subtitle, image }: HeroProps) {
       className="relative w-full h-[70vh] flex items-center justify-center overflow-hidden bg-gray-900"
       aria-label={`${title} Hero Section`}
     >
+      
       {/* ====== Background Image ====== */}
       <Image
         src={image}

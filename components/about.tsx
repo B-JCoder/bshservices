@@ -18,13 +18,13 @@ const About = () => {
           transition={{ duration: 1.2, ease: "easeOut" }}
           className="flex justify-center"
         >
-          <div className="relative w-[320px] h-[320px] sm:w-[420px] sm:h-[420px] md:w-[480px] md:h-[480px] lg:w-[500px] lg:h-[500px] bg-[#1A14A5]/60 backdrop-blur-2xl rounded-3xl shadow-2xl overflow-hidden">
+          <div className="relative w-[320px] h-[320px] sm:w-[420px] sm:h-[420px] md:w-[480px] md:h-[480px] lg:w-[500px] lg:h-[500px] overflow-hidden">
             {/* Background Blue Glow */}
-            <div className="absolute inset-0 -z-10 rounded-full bg-[#1A14A5]/60 blur-3xl"></div>
+            <div className="absolute inset-0 -z-10 rounded-full"></div>
 
             {/* Image fills entire glass background */}
             <Image
-              src="/images/aboutimg.png"
+              src="/images/3dlogobgrewtx.png"
               alt="BSH Solutions - Business Smart Hub"
               fill
               priority

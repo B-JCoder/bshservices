@@ -8,17 +8,19 @@ import About from "@/components/about";
 import ProcessFlow from "@/components/ProcessFlow";
 import Faq from "@/components/faq";
 import Contactform from "@/components/contactform";
-import OurTeamSection from "@/components/Ourteam";
+import OurTeamSection from "@/components/Ourteam";  
 
 // ==== ICONS IMPORTS ====
 import {
   SiReact,
   SiNextdotjs,
   SiNodedotjs,
-  SiFigma,
-  SiAdobexd,
-  SiAdobeillustrator,
+
   SiTailwindcss,
+    SiWordpress, 
+  SiPhp, 
+  SiMeta, 
+  SiGoogleanalytics
 } from "react-icons/si";
 
 const page = () => {
@@ -27,14 +29,11 @@ const page = () => {
       <Header />
 
       <Hero
-        title="About Us"
-        subtitle="We capture moments, products, and stories with a perfect blend of creativity, precision, and professional artistry."
-        image="/images/Photography.png"
+        title="About BSH"
+        subtitle="BSH – Business Smart Hub is your one-stop technology partner, helping physical and digital businesses transform, innovate, and thrive through smart, scalable, and future-ready solutions."
+        image="/images/3dlogo.jpeg"
       />
 
-      <section id="photography-expertise" className="text-center py-16">
-        <h2 className="text-4xl font-bold">About Us</h2>
-      </section>
 
       <About />
 
@@ -63,11 +62,14 @@ const page = () => {
         image="/team/shahzaib.jpg" // 👉 Add your actual image here
         reverse
         cvLink="/cv/muhammad-shahzaib.pdf"
-        tech={[
-          { name: "Figma", icon: <SiFigma /> },
-          { name: "Adobe XD", icon: <SiAdobexd /> },
-          { name: "Illustrator", icon: <SiAdobeillustrator /> },
-        ]}
+       tech={[
+
+  { name: "WordPress", icon: <SiWordpress /> },
+  { name: "PHP", icon: <SiPhp /> },
+  { name: "Meta", icon: <SiMeta /> },
+  { name: "Google Analytics", icon: <SiGoogleanalytics /> },
+]}
+
       />
 
       <ProcessFlow />

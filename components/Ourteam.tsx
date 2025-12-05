@@ -49,7 +49,7 @@ export default function OurTeamSection({
             alt={name}
             width={600}
             height={500}
-            className="object-cover rounded-2xl shadow-xl"
+            className="object-cover"
           />
         </motion.div>
 

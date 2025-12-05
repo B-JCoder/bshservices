@@ -98,7 +98,7 @@ export default function RootLayout({
       logo: "https://bshsolutionss.com/android-chrome-512x512.png",
       sameAs: [
         "https://facebook.com/bshsolutions",
-        "https://instagram.com/bshsolutions",
+        "https://www.instagram.com/bshsolutionss",
       ],
     }),
   }}
