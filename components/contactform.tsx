@@ -33,7 +33,7 @@ const Contactform = () => {
     setStatus("loading")
 
     // WhatsApp number (remove leading 0 → add 92 for Pakistan)
-    const phoneNumber = "923353165603"
+    const phoneNumber = "923128994968"
 
     // Format message for WhatsApp
     const message = `*New Contact Form Submission* 👋
@@ -95,7 +95,7 @@ const Contactform = () => {
             </div>
             <div className="flex items-center gap-3 text-[#231F20]/90">
               <Phone className="text-[#1A14A5] w-6 h-6" />
-              <span>+92 335 3165603</span>
+              <span>+92 312 8994968</span>
             </div>
             <div className="flex items-center gap-3 text-[#231F20]/90">
               <MapPin className="text-[#1A14A5] w-6 h-6" />

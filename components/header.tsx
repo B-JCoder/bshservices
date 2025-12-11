@@ -149,7 +149,7 @@ const Header = () => {
             variant="outline"
             className="border-[#1A14A5] text-[#1A14A5] hover:bg-[#1A14A5] hover:text-white shadow-md rounded-2xl px-5"
           >
-            <Phone className="w-4 h-4 mr-2" /> 0335-3165603
+            <Phone className="w-4 h-4 mr-2" /> +92 312 8994968
           </Button>
         </div>
 
@@ -215,7 +215,7 @@ const Header = () => {
               variant="outline"
               className="border-[#1A14A5] text-[#1A14A5] hover:bg-[#1A14A5] hover:text-white shadow-md rounded-2xl"
             >
-              <Phone className="w-4 h-4 mr-2" /> 0335-3165603
+              <Phone className="w-4 h-4 mr-2" /> +92 312 8994968
             </Button>
           </div>
         </div>

@@ -71,7 +71,7 @@ export default function Form({ serviceName }: FormProps) {
       `🏢 Business Type: ${form.businessType}\n\n` +
       `Please contact me regarding ${serviceName} services.`;
 
-    const whatsappURL = `https://wa.me/923353165603?text=${encodeURIComponent(
+    const whatsappURL = `https://wa.me/923128994968?text=${encodeURIComponent(
       message
     )}`;
     window.open(whatsappURL, "_blank");
