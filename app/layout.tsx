@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
+import { Analytics } from "@vercel/analytics/next"
+import { SpeedInsights } from "@vercel/speed-insights/next"
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -33,6 +34,14 @@ export const metadata: Metadata = {
    other: {
     "google-site-verification":
       "mftol86q7hauVyXwfTJDkzh6lEIO_NfdlDqR24A6y_4",
+  },
+    robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
   },
   authors: [{ name: "BSH Solutions", url: "https://bshsolutionss.com" }],
   openGraph: {
@@ -87,6 +96,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
+         <Analytics />
+          <SpeedInsights />
         <script
   type="application/ld+json"
   dangerouslySetInnerHTML={{
@@ -96,10 +107,13 @@ export default function RootLayout({
       name: "BSH Solutions",
       url: "https://bshsolutionss.com",
       logo: "https://bshsolutionss.com/android-chrome-512x512.png",
-      sameAs: [
-        "https://facebook.com/bshsolutions",
-        "https://www.instagram.com/bshsolutionss",
-      ],
+     "sameAs": [
+  "https://facebook.com/bshsolutions",
+  "https://www.instagram.com/bshsolutionss",
+  "https://www.linkedin.com/company/bshsolutions/",
+  "https://twitter.com/bshsolutions"
+]
+,
     }),
   }}
 />
