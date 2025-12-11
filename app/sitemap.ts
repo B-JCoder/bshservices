@@ -11,6 +11,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
       lastModified: new Date(),
     },
     {
+      url: "https://bshsolutionss.com/contact",
+      lastModified: new Date(),
+    },
+    {
       url: "https://bshsolutionss.com/Services/development",
       lastModified: new Date(),
     },
